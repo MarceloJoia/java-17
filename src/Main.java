@@ -10,7 +10,7 @@ public class Main {
 		String s1, s2, s3;
 
 		x = sc.nextInt();
-		sc.nextLine();
+		sc.nextLine();//CONSOME A QUEBRA DE LINHA
 
 		s1 = sc.nextLine();
 		s2 = sc.nextLine();
