@@ -5,12 +5,13 @@ public class Main {
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		
-		float b, B, h, area;
-		b = 6f;
-		B = 8f;
-		h = 5f;
-		area = (b + B) / 2f * h;
-		System.out.println(area);
+		int a, b;
+		double resultado;
+		a = 5;
+		b = 2;
+		resultado = a / b;
+		System.out.println(resultado);
+		
 		
 	}
 }
