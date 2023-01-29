@@ -8,9 +8,11 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		String x = sc.next();
+		char x; 
 		
-		System.out.println("Você digitou " + x);
+		x = sc.next().charAt(0);
+		
+		System.out.println("Você digitou: " + x);
 
 		sc.close();
 	}
