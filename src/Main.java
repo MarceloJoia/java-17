@@ -8,7 +8,9 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
+		String x = sc.next();
 		
+		System.out.println("Você digitou " + x);
 
 		sc.close();
 	}
