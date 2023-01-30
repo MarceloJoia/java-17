@@ -8,15 +8,12 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		int x = sc.nextInt();
+		int n = sc.nextInt();
 		
-		while(x != 0) {
-			System.out.println(x);
-			
-			x = sc.nextInt();
+		for(int i = 1; i <= 10; i++ ) {
+			System.out.println(n + " * " + i + " = " + i * n);
 		}
 		
 		sc.close();
-
 	}
 }
