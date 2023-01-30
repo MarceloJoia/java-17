@@ -7,19 +7,11 @@ public class Main {
 
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		
 
+		double C, F;
+		char resp;
 		
-		System.out.println("Qual a temperatura en Celsius: ");
-		double C = sc.nextDouble();
-	
-		double F = 9.0 * C / 5.0 + 32;
-		System.out.printf("Temperatura equivalente em Fahrenheit: %.1f.%n", F);
-		
-		System.out.println("Deseja repetir (s/n)?");
-		char resp = sc.next().charAt(0);
-		
-		while(resp != 'n') {
+		do {
 			System.out.println("Qual a temperatura en Celsius: ");
 			C = sc.nextDouble();
 			F = 9.0 * C / 5.0 + 32;
@@ -27,6 +19,9 @@ public class Main {
 			System.out.println("Deseja repetir (s/n)?");
 			resp = sc.next().charAt(0);
 		}
+		while(resp != 'n');
+			
+
 
 		sc.close();
 	}
