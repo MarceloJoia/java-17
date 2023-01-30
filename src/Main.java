@@ -8,18 +8,36 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		String s = "potato apple lemon";
-		String[] vect = s.split(" ");
-		String word1 = vect[0];
-		String word2 = vect[1];
-		String word3 = vect[2];
+		System.out.println("Entre três números:");
 		
-		System.out.print("word1, word2 e word3: ");
-		System.out.println(word1 + ", " +word2 + ", "+ word3+"\n\r");
-		System.out.println("vect[0]: "+vect[0]);
-		System.out.println("vect[1]: "+vect[1]);
-		System.out.println("vect[2]: "+vect[2]);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
 		
+		int maior = max(a, b, c);
+		
+		showResult(maior);
+
 		sc.close();
 	}
+
+	private static int max(int a, int b, int c) {
+		
+		int maior;
+		if(a> b && a > c) {
+			maior = a; 
+		}
+		else if (b > c) {
+			maior = b;
+		}
+		else {
+			maior = c;
+		}
+		return maior;
+	}
+	
+	private static void showResult(int value) {
+		System.out.println("É o maior " + value);
+	}
+	
 }
